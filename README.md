@@ -1,0 +1,2 @@
+# moocMallStaticPage
+to learn fe
