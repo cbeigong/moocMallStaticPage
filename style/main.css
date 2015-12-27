@@ -1,0 +1,426 @@
+.h_27
+{
+    height: 27px;
+}
+.commonWidth
+{
+    width:1000px;
+    /*在这边设置margin-left和margin-right因为及成套的关系下面各个子类就不用设置了*/
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*隐藏*/
+.hide{display: none;}
+/*显示*/
+.show{display: block;}
+
+.topBarLeft
+{
+    float:left;
+}
+
+.topBarRight
+{
+    float:right;
+}
+
+.topBar
+{
+    height:25px;
+    line-height: 25px;
+    background: #F7F7F7;
+
+}
+/*a标签你还可以给他一个background*/
+.collection
+{
+    background: url("../images/icon/collection.jpg") left center no-repeat;
+    /*这个图像只是一个背景，a标签的text-indent没有缩进是为什么？*/
+    /*text-indent: 30px;*/
+    /*但是padding-left可以让它进行缩进*/
+    padding-left: 20px;
+    font-weight:bold;
+}
+/*之所以要把他放在topBar上面是因为父亲继承的关系，要设置他的子元素 */
+.topBar a:hover
+{
+    /*这几设置color就行了*/
+    color:darkred;
+}
+
+
+/*logo开始*/
+.logoBar
+{
+    height:85px;
+    background: #1D7AD9;
+}
+.logo
+{
+    /*!*单纯一个div你给他背景的时候，是没有办法撑开的，还需要设置宽度和高度*!*/
+    /*background: url("../images/logo.jpg");*/
+    /*width:112px;*/
+    /*height:59px;*/
+    padding-top: 13px;
+}
+.searchBox
+{
+    width:430px;
+    /*此处用padding的话，我认为是为了让div满屏的布局*/
+    padding-left:185px;
+    padding-top:23px;
+}
+.searchText
+{
+    width:350px;
+    height:35px;
+    line-height: 35px\9;
+    padding: 0 5px;
+    background: #FFFFFF;
+}
+.searchBtn
+{
+    /*searchBtn button如果你不设置宽度和高度的话，那么撑开的仅仅是文字而已*/
+    width:70px;
+    height:35px;
+    color:#FFF;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    background-color:#FF8C00;
+    /*下面的display: inline是为什么*/
+    /*display: inline;*/
+}
+
+.shopCar
+{
+    margin-top: 23px;
+    margin-right: 59px;
+    _margin-right:30px;
+    width:145px;
+    height:35px;
+    background-color: #FF8C00;
+    /*在shopCar设置字体大小 宽度 字体子类就会继承*/
+    font:14px/35px 微软雅黑;
+    color:#FFFFFF;
+}
+.shopText
+{
+    height:100%;
+    width:87px;
+    background:url("../images/icon/shaoIcon.jpg") 10px center no-repeat;
+    text-indent: 40px;
+    border-right: 1px #E27A00 solid;
+
+}
+/*此处的IE6没有处理兼容*/
+.shopNum
+{
+    width:57px;
+    height:35px;
+    text-indent: 10px;
+    background: url("../images/icon/sj.jpg") 37px center no-repeat;
+}
+
+/*导航开始*/
+.navBox
+{
+    line-height: 35px;
+    height:35px;
+    background: #1369C0;
+    color:#FFFFFF;
+}
+.shopClass
+{
+    position: relative;
+    width:190px;
+    /*这边需要做一个定位，对下面的东西进行定位    */
+    /*我觉得这个图片的处理方式不太好，应该用i包围一个图片，然后向全部分类靠近*/
+    background: url("../images/icon/down.jpg") 145px 15px no-repeat;
+
+}
+.shopClass h3
+{
+    /*padding你只能设置表上下左右的距离 如果涉及到文字的上下左右的居中问题的话，用下面的方法*/
+    line-height:35px;
+    /*左右居中 */
+    font-family: 微软雅黑;
+    font-size: 14px;
+    text-align: center;
+}
+.nav
+{
+    width:810px;
+}
+.nav li
+{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    float:left;
+    width:16.6%;
+    text-align: center;
+}
+.nav .active
+{
+    background-color:#4593FD;
+}
+
+/*shopList*/
+.shopClassShow
+{
+    /*background-color: #1369C0;*/
+    position: absolute;
+    left:0px;
+    top:35px;
+    background-color: dodgerblue;
+    width:180px;
+    padding:8px 5px;
+}
+.shopClassShow dl
+{
+    height:62px;
+}
+.shopClassShow dt
+{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    height: 21px;
+    background: url("../images/icon/shop_sj.jpg") 170px bottom no-repeat;
+}
+.shopClass .aLink
+{
+    width:48px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration:underline ;
+    background: url("../images/icon/aLink_bg.png") left center no-repeat;
+    display: inline-block;
+}
+
+.shopClass .b
+{
+    font:14px/1 微软雅黑;
+}
+.shopClass a
+{
+    color:#FFFFFF;
+}
+.shopClass a:hover
+{
+    text-decoration: underline;
+}
+
+/*banner开始*/
+.banner
+{
+    position: relative;
+    margin-bottom: 15px;
+}
+/*bannerBar是用于定位的*/
+.bannerBar
+{
+    width:810px;
+    height:326px;
+    float: right;
+    position:relative;
+    overflow: hidden;
+
+}
+.bannerPic
+{
+    width:1620px;
+}
+.bannerPic li
+{
+    float: left;
+}
+.bannerPic img
+{
+    display: block;
+    width:810px;
+    height:326px;
+}
+.imgNum
+{
+    text-align: center;
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:20px;
+    width:100%;
+}
+.imgNum a
+{
+    background: #FFFFFF;
+    margin:0 3px;
+    margin-bottom: 3px;
+    width:20px;
+    height:5px;
+    display: inline-block;
+}
+.imgNum .active
+{
+    background: orange;
+}
+
+/*商品标题*/
+.shopTit
+{
+    line-height: 44px;
+    margin-top: 4px;
+}
+.shopTit .icon
+{
+    width:44px;
+    height:44px;
+    background: url("../images/icon/shopIcon.jpg") left top no-repeat;
+    float:left;
+
+}
+.shopTit h3
+{
+    margin-left:15px;
+    font-size:24px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    float:left;
+    border-bottom: 15px;
+}
+.more
+{
+    font-family: 宋体;
+    float:right;
+}
+.more:hover
+{
+    text-decoration: underline;
+}
+.wrapper
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px darkgray solid;
+    height:400px;
+}
+.content_left
+{
+    border:1px darkgray solid;
+    width:190px;
+    height:100%;
+    float:left;
+    background: url("../images/banner/banner_sm_01.jpg") left center no-repeat;
+    overflow: hidden;;
+}
+.content_right
+{
+    float:right;
+    width:804px;
+    height:100%;
+    overflow:hidden;
+}
+.content_top
+{
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+    width:100%;
+    height:280px;
+}
+.content_top ul li
+{
+    float: left;
+    border:1px  darkgray solid;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    margin-top:-1px;
+    width:200px;
+    height:280px;
+    display: block;
+}
+.content_top p
+{
+    font-size:18px;
+    font-weight: bold;
+    display: block;
+}
+.content_top ul li .price
+{
+    width:100%;
+    display: inline-block;
+    font-size: 20px;
+    margin-top:5px;
+    color: orange;
+}
+.content_down ul li
+{
+    float: left;
+    margin-top: -1px;
+    width:200px;
+    margin-right:-1px;
+    height:119px;
+    border:1px darkgray solid;
+}
+.content_down img
+{
+    display: inline-block;
+    float: left;
+    width:101px;
+    height:119px;
+    text-align: center;
+    vertical-align: center;
+}
+.content_down  p
+{
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 30px;
+    font-family: 微软雅黑;
+    font-size:10px;
+    text-align: center;
+}
+.content_down ul li .price
+{
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-top:10px;
+    color: orange;
+}
+.footer
+{
+    width:100%;
+    height:230px;
+    background: #D4D4D4;
+}
+.footer .introduce
+{
+    display: block;
+    text-align: center;
+    padding-top:50px;
+}
+.footer p
+{
+    display: block;
+    text-align: center;
+    margin-top:10px;
+}
+.footer ul li
+{
+    float:left;
+    width:132px;
+    padding: 0 10px;
+    height:49px;
+}
+
+.footer ul li img
+{
+    width:132px;
+    height:49px;
+}
+.footer .footer_center
+{
+    padding:20px 0px;
+    width:610px;
+    height:80px;
+}
